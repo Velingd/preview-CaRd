@@ -1,0 +1,33 @@
+// 900px - 56.25em
+// 700px - 43.75em
+
+@media(max-width: 56.25em) {
+    html {
+        font-size: 58%;
+    }
+    .card {
+        
+        &__item {
+            padding: 2rem;
+        }
+
+        
+    &__heading {
+        margin-block: 3rem;
+    }
+    &__text{
+        margin-block-end: 5rem;
+        line-height: 1.5;
+    }
+
+        &__btn{
+            padding: 1.2rem 2rem;
+        }
+    }
+}
+
+@media(max-width: 27.62em) {
+    .card {
+        padding: 1rem 2rem;
+    }
+}

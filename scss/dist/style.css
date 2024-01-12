@@ -1,0 +1,90 @@
+:root {
+  --primary-bright-orange: hsl(31, 77%, 52%);
+  --dark-cyan: hsl(184, 100%, 22%);
+  --primary-very-dark-cyan: hsl(179, 100%, 13%);
+  --neutral-transparent-white-paragraphs: hsla(0, 0%, 100%, 0.75);
+  --neutral-very-light-gray-background-headings-buttons: hsl(0, 0%, 95%);
+}
+
+*, *::before, *::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-size: 1.5rem;
+  font-family: "Lexend Deca", sans-serif;
+  font-weight: 400;
+}
+
+h1 {
+  font-family: "Big Shoulders Display", sans-serif;
+  font-weight: 700;
+}
+
+h1, p {
+  margin: 0;
+}
+
+.container {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--neutral-very-light-gray-background-headings-buttons);
+}
+
+.card {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  max-width: 92.5rem;
+}
+.card__item {
+  background-color: var(--primary-bright-orange);
+  padding: 4.5rem;
+}
+.card__item:nth-child(2) {
+  background-color: var(--dark-cyan);
+}
+.card__item:nth-child(3) {
+  background-color: var(--primary-very-dark-cyan);
+}
+.card__heading {
+  font-size: 4rem;
+  color: var(--neutral-very-light-gray-background-headings-buttons);
+  text-transform: uppercase;
+  margin-block: 4rem;
+}
+.card__text {
+  color: var(--neutral-transparent-white-paragraphs);
+  margin-block-end: 8rem;
+  line-height: 1.7;
+}
+.card__btn {
+  display: inline-block;
+  background-color: var(--neutral-very-light-gray-background-headings-buttons);
+  padding: 1.8rem 3rem;
+  color: var(--primary-bright-orange);
+  border: 0.15rem solid currentColor;
+  outline: none;
+  font-weight: 700;
+  border-radius: 50rem;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+.card__btn:hover {
+  background-color: inherit;
+  color: var(--neutral-very-light-gray-background-headings-buttons);
+  border: 0.15rem solid currentColor;
+}
+.card__btn-suvs {
+  color: var(--dark-cyan);
+}
+.card__btn-luxury {
+  color: var(--dark-cyan);
+}
